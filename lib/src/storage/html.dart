@@ -6,7 +6,7 @@ import '../value.dart';
 
 class StorageImpl {
   StorageImpl(this.fileName, [this.path]);
-  html.Storage get localStorage => html.window.localStorage;
+  html.Storage get localStorage => html.window.sessionStorage;
 
   final String? path;
   final String fileName;
